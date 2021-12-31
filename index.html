@@ -8,21 +8,115 @@
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-    <section id="header-nav-container">
-        <header>
-            <div class="logo">
-                <h2 id="nav-logo" class="logo-text">LOGO</h2>
-            </div>
+    <header>
+        <div class="logo">
+            <h2 id="nav-logo" class="logo-text">LOGO</h2>
+        </div>
+    
+        <nav class="navbar">
+            <ul class="nav-menu">
+                <li><a href="#" class="nav-link">Home</a></li>
+                <li><a href="#" class="nav-link">About</a></li>
+                <li><a href="#" class="nav-link">Projects</a></li>
+                <li><a href="#" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
 
-            <nav class="navbar">
-                <ul class="nav-menu">
-                    <li><a href="#" class="nav-link">Home</a></li>
-                    <li><a href="#" class="nav-link">About</a></li>
-                    <li><a href="#" class="nav-link">Projects</a></li>
-                    <li><a href="#" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    </section>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+    </header>
+
+    <main>
+        <!-- BANNER SECTION -->
+        <section id="banner-section">
+            <div class="banner-text">
+                <h2>Hi, I'm Kenneth</h2>
+                <h1>A Frontend Web designer</h1>
+                
+            </div>
+            <img src="/img/Banner-img.svg" alt="" srcset="" style="width:450px;height:450px">
+        </section>
+        <!-- END OF BANNER SECTION -->
+
+        <!-- ABOUT SECTION -->
+        <section id="about-section">
+            <div class="about-container">   
+                <div class="image-container">
+                    <img src="/img/About-img.svg" alt="" srcset="" style="width:450px; height:300px">
+                </div>
+                <div class="text-container">
+                    <h2>About Me</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam soluta sint blanditiis neque ad dignissimos voluptatum velit voluptatibus impedit, nisi consequuntur exercitationem, culpa quod inventore!</p>
+                </div>
+            </div>
+        </section>
+        <!--  END OF ABOUT SECTION  -->
+
+        <!-- SKILLS SECTION -->
+        <section id="skills-section">
+            <div class="skills-container">   
+                <div class="text-container">
+                    <h2>Skills</h2>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam soluta sint blanditiis neque ad dignissimos voluptatum velit voluptatibus impedit, nisi consequuntur exercitationem, culpa quod inventore!</p>
+                </div>
+
+                <div class="image-container">
+                    <img src="/img/Skills-img.svg" alt="" srcset="" style="width:550px; height:500px">
+                </div>
+            </div>
+        </section>
+        <!-- END OF SKILLS SECTION -->
+
+        <!-- PROJECTS SECTION -->
+        <!-- <section id="project-section">
+            <div class="project-container">
+                <h2>Projects</h2>
+
+                <div class="project-slider">
+
+                </div>
+            </div>
+        </section> -->
+        <!-- END OF PROJECTS SECTION -->
+
+        <!-- CONTACTS SECTION -->
+        <section id="contact-section">
+            <div class="contact-container">   
+                <div class="image-container">
+                    <img src="/img/contactMe-img.svg" alt="" srcset="" style="width:450px; height:400px">
+                </div>
+                <div class="text-container">
+                    <h2>Contact Me</h2>
+                    <hr>
+                    <form action="" method="post">
+                        <label for="">First name</label>
+                        <input type="text" name="firstName" id="firstName">
+                    </form>
+                </div>
+            </div>
+        </section>
+        <!-- END OF CONTACTS SECTION -->
+
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h1>LOGO</h1>
+            </div>
+            <hr style="width:70%;border:1px solid #fff;margin:auto;">
+            <div class="footer-details">
+                <p>made by kenneth z. yashim &copy; 2022</p>
+            </div>
+        </div>
+    </footer>
+
+
 </body>
 </html>

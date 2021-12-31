@@ -1,12 +1,160 @@
+
+/* DEFAULT STYLES */
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    font-family: cursive;
 }
 
 html{
     -ms-text-size-adjust: 100% ;
     -webkit-text-size-adjust: 100%;
+}
+body{
+    display:flex;
+    flex-direction: column;
+}
+header{
+    /* background-color: aquamarine; */
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    padding:0.8rem;
+}
+li,a{
+    list-style: none;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color:#1e1e1e;
+}
+.bar{
+    display:block;
+    margin: 5px auto;
+    width:25px;
+    height:2px;
+    background-color: #1e1e1e;
+}
+
+/* END OF DEFAULT STYLES */
+
+/* HEADER & NAVBAR STYLING */
+.navbar{
+    flex:0.5;
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: #1e1e1e
+}
+.hamburger{
+    display:none;
+    cursor:pointer
+}
+
+/* END OF HEADER & NAVBAR STYLING */
+
+/* BANNER SECTION STYLES */
+#banner-section{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height:80vh;
+    width:100%;
+}
+.banner-text{
+    background-color:cadetblue;
+}
+/* END OF BANNER SECTION STYLES */
+
+/* ABOUT SECTION */
+#about-section{
+    background-color: #efeef1;
+    height:fit-content;
+    padding:4rem;
+
+}
+.about-container{
+    background-color: rgb(255, 255, 255);
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    padding:5rem;
+}
+.text-container{
+    /* background-color: chartreuse; */
+    width: 50%;
+    height:min-content;
+}
+.text-container hr{
+    width:10%;
+    border:1px solid #FF5757;
+    border-radius: 5px;
+}
+/* END OF ABOUT SECTION */
+
+/* SKILLS SECTION STYLES */
+#skills-section{
+    background-color: #fff;
+    height:fit-content;
+    /* padding:2rem; */
+}
+.skills-container{
+    /* background-color:#efeef1; */
+    width:80%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    /* padding:2rem; */
+}
+/* END OF SKILLS SECTION STYLES */
+
+/* PROJECTS SECTION */
+#project-section{
+    background-color: #efeef1;
+}
+/* END OF PROJECTS SECTION */
+
+/* Contact Section */
+#contact-section{
+    background-color: #efeef1;
+    padding:5rem 0 2rem 0;
+}
+.contact-container{
+    background-color: #fff;
+    width:90%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding:3rem;
+}
+/* End of Contact Section */
+
+/* FOOTER STYLING */
+footer{
+    background-color: #212529;
+    height:13vh;
+    text-align: center;
+    color:#fff;
+}
+/* END OF FOOTER STYLING */
+
+
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* -------------------------------------- */
+/* -------------------------------------- */
+
+@media  screen and (max-width:450px) {
+    .hamburger{
+        display:block;
+    }
 }
