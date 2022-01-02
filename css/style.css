@@ -48,7 +48,8 @@ a{
     color:#fff;
 }
 p{
-    text-align: justify;
+    text-align:justify;
+    
 }
 hr{
     width:20%;
@@ -79,7 +80,12 @@ hr{
 
 /* HEADER STYLES */
 header{
+    position:fixed;
+    left:0;
+    top:0;
+    width:100%;
     background-color: #272727;
+    transition: 1s ease-in-out;
 }
 .navbar{
     min-height: 40px;
@@ -95,16 +101,15 @@ header{
     flex-direction: column;
     gap:30px;
     width:100%;
+    height:fit-content;
     text-align:center;
     transition:0.4s;
     background-color: #272727;
-    padding:0.3rem 0;
+    padding:0.8rem 0;
+    z-index:3;
 }
 .nav-menu > li > a{
     color:#fff;
-}
-.nav-menu > li > a:active{
-    
 }
 .nav-menu.active{
     left:0;
@@ -215,33 +220,46 @@ header{
     position: absolute;
     left:0;
     height:100%;
-    background-color: crimson;
+    /* background-color: crimson; */
 }
 .html::before{
+    background-color:#F06529 ;
     width:80%;
 }
 .css::before{
+    background-color: #264DE4;
     width:50%;
 }
 .javascript::before{
+    background-color: #EAD41C;
     width:20%;
 }
 .bootstrap::before{
+    background-color: #523A76;
     width:40%;
 }
 /* END OF SKILLS CONTAINER */
 
 /* CONTACT SECTION */
 .contact-container{
-    width:90%;
+    position: relative;
+    width:100%;
     height:fit-content;
-    margin:4rem auto;
+    margin:2rem auto;
     background-color: #1E1E1E;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+}
+#contact-mobile{
+    /* background-color:#1DA1F2 ; */
+    padding-left: 1.5rem;
+    margin-left: 1rem;
+    align-content: center;
+    position: relative;
+    width:100%;
 }
 
 #contact-header{
@@ -253,17 +271,17 @@ header{
     margin:3rem 0 1rem 0;
 }
 ul#contact-icons{
-    width:100%;
-    /* background-color: coral; */
+    width:80%;
+    position: relative;
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    gap:50px;
+    gap:30px;
 
 
 }
 ul#contact-icons>li>a>i{
-    font-size:2rem
+    font-size:1.5rem
 }
 #linkedin{
     color:#2867B2;
@@ -297,6 +315,8 @@ ul#contact-icons>li>a>i{
 }
 
 form{
+    position: relative;
+    width:90%;
     margin:2rem 0;
     display:flex;
     flex-direction: column;
@@ -312,12 +332,14 @@ input{
     padding:1rem;
     font-size:16px;
     line-height: 3px;
+    position: relative;
 }
 textarea{
     outline:skyblue;
     border-radius: 10px;
     padding:1rem;
     font-size:20px;
+    position: relative;
 }
 #submit-btn{
     height:3rem;
@@ -339,7 +361,11 @@ textarea{
 /* FOOTER SECTION */
 footer{
     background-color: #272727;
+    position: relative;
+    bottom:0;
+    left:0;
     height:20vh;
+    width:100%;
 }
 .footer-details h2,
 .footer-details p{
@@ -360,7 +386,7 @@ footer{
 /* END OF FOOTER SECTION */
 
 /* DARK & LIGHT MODE STYLES */
-.label{
+/* .label{
     background-color: #383838;
     display:flex;
     justify-content: space-between;
@@ -396,6 +422,15 @@ footer{
     height:24px;
     border-radius:50%;
     background-color:#fff;
-    transition: transform 0.7s linear;
-}
+    transition: transform 0.7s linear; 
+}*/
 /* END OF DARK & LIGHT MODE STYLES */
+
+/* *********************************************** */
+/* *********************************************** */
+/* *********************************************** */
+/* *********************************************** */
+
+@media screen and (min-width:500px) and (max-width:768px) {
+    
+}
