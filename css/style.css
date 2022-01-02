@@ -16,6 +16,7 @@ body{
     flex-direction: column;
     background-color: #121212;
     font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
 
 }
 .light{
@@ -120,7 +121,7 @@ header{
 /* BANNER SECTION */
 .banner-section{
     width:100%;
-    height:90vh;
+    height:fit-content;
     margin:0 auto;
     background-color: #1E1E1E;
 }
@@ -235,7 +236,7 @@ header{
     width:20%;
 }
 .bootstrap::before{
-    background-color: #523A76;
+    background-color: #8b56db;
     width:40%;
 }
 /* END OF SKILLS CONTAINER */
@@ -364,7 +365,7 @@ footer{
     position: relative;
     bottom:0;
     left:0;
-    height:20vh;
+    height:fit-content;
     width:100%;
 }
 .footer-details h2,
@@ -432,5 +433,162 @@ footer{
 /* *********************************************** */
 
 @media screen and (min-width:500px) and (max-width:768px) {
+    header{
     
+    }
+    .banner-section{
+        width:100%;
+        height:fit-content;
+        margin:0 auto;
+        background-color: #1E1E1E;
+    }
+    
+    .banner-container{
+        display:flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        text-align: center;
+        color:rgb(255, 255, 255);
+    }
+    .banner-container img#ironman{
+        width:250px;
+        height: 250px;
+        margin-top: 7rem;
+    }
+    .banner-text h1{
+        font-size:2rem;
+    }
+    .banner-text h3,.banner-text p{
+        color:rgb(189, 189, 189);
+        text-align: center;
+        margin:0.8rem 0 0.8rem 0;
+    }
+    /* ABOUT STYLES */
+    .about-container{
+        width:70%;
+        height:fit-content;
+        margin:4rem auto;
+        background-color: #1E1E1E;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    .about-text{
+        /* position:relative; */
+        width:80%;
+    }
+    #about-header{
+        color:#FF914D;
+    }
+    .about-container img#blackpanther{
+        margin:1rem 0 1rem 0;
+    }
+    /* END OF ABOUT STYLES */
+
+    /* SKILLS STYLES */
+    .skills-container{
+        width:70%;
+        height:fit-content;
+        margin:4rem auto;
+        background-color: #1E1E1E;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 1.5rem;;
+    }
+    #skills-header{
+        color:#7ED957;
+    }
+    
+    #spiderman{
+        width:150px;
+        height:150px;
+        margin:3rem 0 1rem 0;
+    }
+    
+    #skills-text{
+        width:60%;
+        /* position: relative; */
+    }
+    /* END OF SKILLS STYLES */
+
+    /* CONTACT STYLES */
+    .contact-container{
+        /* position: relative; */
+        width:80%;
+        height:fit-content;
+        margin:2rem auto;
+        background-color: #1E1E1E;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    #contact-mobile{
+        /* background-color:#1DA1F2 ; */
+        padding-left: 1.5rem;
+        margin:0 auto;
+        text-align: center;
+        align-content: center;
+        /* position: relative; */
+        width:80%;
+    }
+    
+    #contact-header{
+        color:#F7DF1E;
+    }
+    #groot{
+        width:150px;
+        height:150px;
+        margin:3rem 0 1rem 0;
+    }
+    form{
+        /* position: relative; */
+        width:90%;
+        margin:2rem 0;
+        display:flex;
+        flex-direction: column;
+        text-align: start;
+        gap:15px;
+        color:#ddd;
+    }
+    input{
+        height:2.5rem;
+        border-radius: 10px;
+        border:none;
+        outline:skyblue;
+        padding:1rem;
+        font-size:16px;
+        line-height: 3px;
+        /* position: relative; */
+    }
+    textarea{
+        outline:skyblue;
+        border-radius: 10px;
+        padding:1rem;
+        font-size:20px;
+        /* position: relative; */
+    }
+    #submit-btn{
+        height:3rem;
+        width:5rem;
+        font-size:1.2rem;
+        border-radius: 10px;
+        border:none;
+        background-color: #2867B2;
+        color:#ddd;
+        align-self: center;
+        cursor:pointer;
+    }
+    #submit-btn:hover{
+        background-color:#87c0e4;
+        color:#272727;
+    }
+    /* END OF CONTACT STYLES */
 }
