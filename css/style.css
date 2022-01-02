@@ -18,11 +18,19 @@ body{
     font-family: 'Poppins', sans-serif;
 
 }
+.light{
+    background-color:#ddd;
+    color:#121212;
+}
+section{
+    scroll-snap-align: start;
+}
 .container{
     width:90%;
     /* background-color: blueviolet; */
     margin:0 auto;
     padding:1rem;
+    
 }
 li{
     list-style: none;
@@ -45,7 +53,27 @@ p{
 hr{
     width:20%;
     margin:0 auto 1.5rem auto;
-
+}
+.hamburger{
+    cursor: pointer;
+}
+.hamburger.active .bar:nth-child(2){
+    opacity:0;
+}
+.hamburger.active .bar:nth-child(1){
+    transform:translateY(8px) rotate(45deg)
+}
+.hamburger.active .bar:nth-child(3){
+    transform:translateY(-8px) rotate(-45deg)
+}
+.bar{
+    display:block;
+    width:23px;
+    height: 2px;
+    background: #fff;
+    margin:0.3rem auto;
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
 }
 /* Default styles */
 
@@ -53,51 +81,45 @@ hr{
 header{
     background-color: #272727;
 }
-
-.nav-container{
+.navbar{
+    min-height: 40px;
     display:flex;
     justify-content: space-between;
     align-items: center;
-    color:#fff;
 }
-
-button#hamburger{
-    background:none;
-    border:none;
-    font-size:1.5rem;
-    cursor: pointer;
-    padding:0 10px 0 10px;
-    color:#fff;
-
-}
-#nav-menu{
+.nav-menu{
+    position: absolute;
+    left:-100%;
+    top:70px;
     display:flex;
     flex-direction: column;
-    -ms-flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    display: none;
+    gap:30px;
+    width:100%;
+    text-align:center;
+    transition:0.4s;
+    background-color: #272727;
+    padding:0.3rem 0;
 }
-#nav-menu>li>a{
-    background-color: blueviolet;
-    display: block;
-    padding:.8rem 0.6rem;
-    text-align: center;
-    position: relative;
+.nav-menu > li > a{
+    color:#fff;
+}
+.nav-menu > li > a:active{
     
 }
-#nav-menu .open{
-    display:block;
+.nav-menu.active{
+    left:0;
 }
+
 /* END OF HEADER STYLES */
 
 /* BANNER SECTION */
-#banner-section{
+.banner-section{
     width:100%;
     height:90vh;
     margin:0 auto;
     background-color: #1E1E1E;
 }
+
 .banner-container{
     display:flex;
     flex-direction: column;
@@ -161,7 +183,51 @@ button#hamburger{
     width:150px;
     height:150px;
     margin:3rem 0 1rem 0;
+}
 
+#skills-text{
+    width:60%;
+    position: relative;
+}
+.line{
+    margin-bottom: 15px;
+    position: relative;
+    color:#fff;
+    /* background-color: darkcyan; */
+}
+.info{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    /* background-color: lightseagreen; */
+}
+.info span{
+    font-size: 16px;
+}
+.rate{
+    background-color: lightgrey;
+    height:5px;
+    width:100%;
+    position: relative;
+}
+.rate::before{
+    content:'';
+    position: absolute;
+    left:0;
+    height:100%;
+    background-color: crimson;
+}
+.html::before{
+    width:80%;
+}
+.css::before{
+    width:50%;
+}
+.javascript::before{
+    width:20%;
+}
+.bootstrap::before{
+    width:40%;
 }
 /* END OF SKILLS CONTAINER */
 
@@ -185,7 +251,6 @@ button#hamburger{
     width:150px;
     height:150px;
     margin:3rem 0 1rem 0;
-
 }
 ul#contact-icons{
     width:100%;
@@ -266,7 +331,7 @@ textarea{
     cursor:pointer;
 }
 #submit-btn:hover{
-    background-color: #7cace6;
+    background-color:#87c0e4;
     color:#272727;
 }
 /* END OF CONTACT SECTION */
@@ -296,16 +361,41 @@ footer{
 
 /* DARK & LIGHT MODE STYLES */
 .label{
-    background-color: #fff;
+    background-color: #383838;
     display:flex;
+    justify-content: space-between;
+    padding:5px;
+    position: fixed;
+    align-items:center;
     border-radius:50px;
     width:50px;
     height:26px;
+}
+.checkbox{
+    position:absolute;
+    opacity: 0;
+}
+.checkbox:checked + label{
+    background-color: rgb(102, 102, 102);
+}
+.checkbox:checked + label > .ball{
+    background-color: #272727;
+    transform: translateX(24px);
 }
 .uil-moon{
     color:#fccb0a;
 }
 .uil-sun{
-    
+    color:#f39c12;
+}
+.ball{
+    position: absolute;
+    top:1px;
+    left:1px;
+    width:24px;
+    height:24px;
+    border-radius:50%;
+    background-color:#fff;
+    transition: transform 0.7s linear;
 }
 /* END OF DARK & LIGHT MODE STYLES */

@@ -12,28 +12,39 @@
 <body>
     <header>
         <div class="container nav-container">
-            <h2 id="nav-logo">Logo</h2>
             <nav class="navbar">
-                <button id="hamburger">&#9776;</button>
-                <ul id="nav-menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
+            <h2 id="nav-logo">Logo</h2>
+                <ul class="nav-menu">
+                    <li><a href="#" class="nav-link">Home</a></li>
+                    <li>
+                        <a href="#about-section" class="nav-link">About</a>
+                    </li>
+                    <li>
+                        <a href="#skills-section" class="nav-link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#contact-section" class="nav-link">Contact</a>
+                    </li>
                 </ul>
+
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
             </nav>
         </div>
     </header>
-    <aside>
+    <!-- <aside>
         <input type="checkbox" name="checkbox" id="checkbox" class="checkbox">
         <label for="checkbox" class="label">
             <i class="uil uil-moon"></i>
             <i class="uil uil-sun"></i>
             <div class="ball"></div>
         </label>
-    </aside>
+    </aside> -->
     <main>
-        <section id="banner-section">
+        <section id="banner-section" class="banner-section">
             <div class="container banner-container">
                 <img src="/img/ironman2.svg" alt="Hero image" id="ironman">
                 <div class="banner-text">
@@ -59,11 +70,37 @@
         <section id="skills-section">
             <div class="container skills-container">
                 <img src="/img/spiderman.svg" alt="skills image" id="spiderman">
-                <div class="section-text">
+                <div class="section-text" id="skills-text">
                     <h3 class="section-header" id="skills-header">Skills</h3>
                     <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto beatae itaque sit mollitia quaerat, perferendis quia dolorum necessitatibus impedit.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla architecto beatae itaque sit mollitia quaerat, perferendis quia dolorum necessitatibus impedit.</p>
+                    <div class="line">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="rate html"></div>
+                    </div>
+                    <div class="line">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="rate css"></div>
+                    </div>
+                    <div class="line">
+                        <div class="info">
+                            <span>JAVASCRIPT</span>
+                            <span>20%</span>
+                        </div>
+                        <div class="rate javascript"></div>
+                    </div>
+                    <div class="line">
+                        <div class="info">
+                            <span>BOOTSTRAP</span>
+                            <span>45%</span>
+                        </div>
+                        <div class="rate bootstrap"></div>
+                    </div>
                 </div>
             </div>
         </section>
