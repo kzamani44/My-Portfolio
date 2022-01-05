@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&family=Pushster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Parisienne&family=Poppins:wght@300&family=Sacramento&display=swap');
 /* Default styles */
 *{
     margin:0;
@@ -23,12 +23,9 @@ body{
     background-color:#ddd;
     color:#121212;
 }
-section{
-    scroll-snap-align: start;
-}
+
 .container{
     width:90%;
-    /* background-color: blueviolet; */
     margin:0 auto;
     padding:1rem;
     
@@ -87,12 +84,17 @@ header{
     width:100%;
     background-color: #272727;
     transition: 1s ease-in-out;
+    z-index: 3;
 }
 .navbar{
     min-height: 40px;
     display:flex;
     justify-content: space-between;
     align-items: center;
+}
+#logo{
+    color:#fff;
+    font-family: 'Dancing Script', cursive;
 }
 .nav-menu{
     position: absolute;
@@ -261,6 +263,9 @@ header{
     align-content: center;
     position: relative;
     width:100%;
+    display:flex;
+    flex-direction: column;
+    
 }
 
 #contact-header{
@@ -591,4 +596,269 @@ footer{
         color:#272727;
     }
     /* END OF CONTACT STYLES */
+}
+
+/* ************************* */
+/* ************************* */
+/* ************************* */
+/* ************************* */
+
+/* IPAD PRO AND DESKTOP SCREEN SIZES */
+
+@media screen and (min-width:769px) {
+    .hamburger{
+        display:none;
+    }
+    header{
+        position:fixed;
+        left:0;
+        top:0;
+        width:100%;
+        /* background-color: #754444; */
+        transition: 1s ease-in-out;
+        flex-direction: row;
+        z-index: 3;
+    }
+    .navbar{
+        position:relative;
+        display: flex;
+    }
+    .navbar h1{
+        color:#fff;
+    }
+    .nav-menu{
+        position:relative;
+        top:0;
+        left:10px;
+        display:flex;
+        justify-content: space-evenly;
+        flex-direction: row;
+        width:70%;
+        background-color: transparent;
+
+    }
+    .nav-menu > li > a{
+        color:#fff;
+    }
+    .nav-menu.active{
+        left:0;
+    }
+    /* END OF HEADER STYLES */
+
+    /* ABOUT STYLES */
+    .about-container{
+        width:90%;
+        height:fit-content;
+        margin:4rem auto;
+        background-color: #1E1E1E;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    #about-header{
+        color:#FF914D;
+    }
+    .about-text{
+        width:40%;
+    }
+    .about-container img#blackpanther{
+        margin:1rem 0 1rem 0;
+        width:30%;
+    }
+    /* END OF ABOUT STYLES */
+    
+
+    /* SKILLS STYLES */
+    .skills-container{
+        width:90%;
+        height:fit-content;
+        margin:4rem auto;
+        background-color: #1E1E1E;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        text-align: center;
+    }
+    #skills-header{
+        color:#7ED957;
+    }
+    
+    #spiderman{
+        width:300px;
+        height:300px;
+        margin:3rem 0 1rem 0;
+    }
+    
+    #skills-text{
+        width:40%;
+        position: relative;
+    }
+    .line{
+        margin-bottom: 15px;
+        position: relative;
+        color:#fff;
+        /* background-color: darkcyan; */
+    }
+    .info{
+        display:flex;
+        justify-content: space-between;
+        align-items:center;
+        /* background-color: lightseagreen; */
+    }
+    .info span{
+        font-size: 16px;
+    }
+    .rate{
+        background-color: lightgrey;
+        height:5px;
+        width:100%;
+        position: relative;
+    }
+    .rate::before{
+        content:'';
+        position: absolute;
+        left:0;
+        height:100%;
+        /* background-color: crimson; */
+    }
+    .html::before{
+        background-color:#F06529 ;
+        width:80%;
+    }
+    .css::before{
+        background-color: #264DE4;
+        width:50%;
+    }
+    .javascript::before{
+        background-color: #EAD41C;
+        width:20%;
+    }
+    .bootstrap::before{
+        background-color: #8b56db;
+        width:40%;
+    }
+    
+    /* END OF SKILLS STYLES */
+
+    /* CONTACT SECTION */
+.contact-container{
+    position: relative;
+    width:100%;
+    height:fit-content;
+    margin:2rem auto;
+    background-color: #1E1E1E;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+#contact-mobile{
+    padding-left: 1.5rem;
+    align-content: center;
+    position: relative;
+    width:60%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#contact-header{
+    color:#F7DF1E;
+}
+#groot{
+    width:300px;
+    height:300px;
+    margin:3rem 0 1rem 0;
+}
+ul#contact-icons{
+    width:20%;
+    position: relative;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap:30px;
+
+
+}
+ul#contact-icons>li>a>i{
+    font-size:1.5rem
+}
+#linkedin{
+    color:#2867B2;
+}
+#linkedin:hover{
+    color:#5d93d4;
+}
+#github{
+    color:#fff;
+}
+#github:hover{
+    color:rgb(206, 206, 206);
+}
+#twitter{
+    color:#1DA1F2;
+}
+#twitter:hover{
+    color:#87c0e4;
+}
+#instagram{
+    color: #833AB4;
+}
+#instagram:hover{
+    color: #a266ca;
+}
+#mail{
+    color:#F56040;
+}
+#mail:hover{
+    color:#f1937e;
+}
+
+form{
+    position: relative;
+    width:60%;
+    margin:2rem 0;
+    display:flex;
+    flex-direction: column;
+    text-align: start;
+    gap:15px;
+    color:#ddd;
+}
+input{
+    height:2.5rem;
+    border-radius: 10px;
+    border:none;
+    outline:skyblue;
+    padding:1rem;
+    font-size:16px;
+    line-height: 3px;
+    position: relative;
+}
+textarea{
+    outline:skyblue;
+    border-radius: 10px;
+    padding:1rem;
+    font-size:20px;
+    position: relative;
+}
+#submit-btn{
+    height:3rem;
+    width:5rem;
+    font-size:1.2rem;
+    border-radius: 10px;
+    border:none;
+    background-color: #2867B2;
+    color:#ddd;
+    align-self: center;
+    cursor:pointer;
+}
+#submit-btn:hover{
+    background-color:#87c0e4;
+    color:#272727;
+}
+/* END OF CONTACT SECTION */
 }
