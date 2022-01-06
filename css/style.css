@@ -124,7 +124,7 @@ header.light{
     z-index:3;
 }
 .nav-menu.light{
-    background-color: #ddd;
+    background-color: rgb(247, 247, 247);;
 }
 
 .nav-menu > li > a{
