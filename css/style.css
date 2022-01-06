@@ -74,6 +74,9 @@ hr{
     transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
 }
+.bar.light{
+    background-color: #121212;
+}
 /* Default styles */
 
 /* HEADER STYLES */
@@ -85,6 +88,12 @@ header{
     background-color: #272727;
     transition: 1s ease-in-out;
     z-index: 3;
+}
+header.light{
+    background-color: rgb(247, 247, 247);
+    box-shadow: 0 0 5px #ddd;
+    border-bottom: 1px solid #a1a1a1c9;
+    color:#121212;
 }
 .navbar{
     min-height: 40px;
@@ -114,8 +123,15 @@ header{
     padding:0.8rem 0;
     z-index:3;
 }
+.nav-menu.light{
+    background-color: #ddd;
+}
+
 .nav-menu > li > a{
     color:#fff;
+}
+.nav-link.light{
+    color:#121212;
 }
 .nav-menu.active{
     left:0;
@@ -331,6 +347,9 @@ ul#contact-icons>li>a>i{
 #github{
     color:#fff;
 }
+#github.light{
+    color:#121212;
+}
 #github:hover{
     color:rgb(206, 206, 206);
 }
@@ -416,7 +435,7 @@ footer{
     width:100%;
 }
 footer.light{
-    background-color:#ddd;
+    background-color:rgb(241, 241, 241);
 }
 .footer-details h2,
 .footer-details p{

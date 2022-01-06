@@ -1,5 +1,5 @@
 const hamburger = document.querySelector(".hamburger");
-const navMenu = document.querySelector(".nav-menu");
+var navMenu = document.querySelector(".nav-menu");
 
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
@@ -29,6 +29,10 @@ const textArea = document.querySelector("textarea");
 const footer = document.querySelector("footer");
 const footerText = document.querySelectorAll(".footer-text");
 const logo = document.getElementById("logo");
+const header = document.querySelector("header");
+const bar = document.querySelectorAll(".bar");
+const navLink = document.querySelectorAll(".nav-link");
+const github = document.getElementById("github");
 checkbox.addEventListener("change",() =>{
 
     // change theme of the website
@@ -49,5 +53,10 @@ checkbox.addEventListener("change",() =>{
     textArea.classList.toggle("light");
     footer.classList.toggle("light");
     footerText.forEach(i =>i.classList.toggle("light"));
-    logo.classList.toggle("light")
+    logo.classList.toggle("light");
+    header.classList.toggle("light");
+    bar.forEach(i =>i.classList.toggle("light"));
+    navMenu.classList.toggle("light")
+    navLink.forEach(i => i.classList.toggle("light"));
+    github.classList.toggle("light");
 });
