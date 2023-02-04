@@ -1,6 +1,10 @@
+// Variables declarations
 const hamburger = document.querySelector(".hamburger");
-var navMenu = document.querySelector(".nav-menu");
+let navMenu = document.querySelector(".nav-menu");
+let currentYear = document.getElementById("footer-year");
 
+
+// Script to toggle Navbar Menu
 hamburger.addEventListener("click", () => {
     hamburger.classList.toggle("active");
     navMenu.classList.toggle("active");
@@ -12,7 +16,8 @@ document.querySelectorAll(".nav-link").forEach(n => n.addEventListener("click", 
 }))
 
 
-// LIGHT & DARK MODE SCRIPT
+/* LIGHT & DARK MODE SCRIPT */
+// Getting all the variables to be toggled 
 const checkbox = document.getElementById("checkbox");
 const bannerBg = document.querySelector(".banner-section");
 const bannerText = document.querySelector(".banner-text");
@@ -60,3 +65,7 @@ checkbox.addEventListener("change",() =>{
     navLink.forEach(i => i.classList.toggle("light"));
     github.classList.toggle("light");
 });
+
+// Js Script to update Footer year 
+let year = new Date();
+currentYear.innerHTML = year.getFullYear();
